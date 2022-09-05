@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Search Property</title></head>
+	<body>
+		<form name="searchprp" method="GET" action="#">
+			<table border="0" align="center" cellpadding="15" width="40%">
+				<thead>
+					<tr bgcolor="#CA955C">
+						<th colspan="2">Searh Property</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr bgcolor="#CA955C">
+						<th colspan="2">
+							<input type="submit" name="proses" value="Search" />&nbsp;&nbsp;
+							<input type="reset" name="unproses" value="Cancel" />
+						</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td><label>Type</label></td>
+						<td>
+							<input type="radio" name="type" value="H" checked/>Home&nbsp;&nbsp;
+							<input type="radio" name="type" value="O"/>Office&nbsp;&nbsp;
+							<input type="radio" name="type" value="A"/>Apartment
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"><label>Area</label></td>
+						<td>
+							<input type="checkbox" name="area" value="Toronto Condo"/>Toronto Condo<br/>
+							<input type="checkbox" name="area" value="Ontario"/>Ontario<br/>
+							<input type="checkbox" name="area" value="Humber Bay" checked/>Humber Bay<br/>
+							<input type="checkbox" name="area" value="Richmond Hill"/>Richmond Hill<br/>
+							<input type="checkbox" name="area" value="New York"/>New York<br/>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Price</label></td>
+						<td>
+							<select name="price">
+								<option value="">-- Price List --</option>
+								<option value="300-500">300-500 Jt</option>
+								<option value="1">1 Miliar</option>
+								<option value="2" selected>2 Miliar</option>
+								<option value="3">3 Miliar</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
